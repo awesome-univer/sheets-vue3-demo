@@ -1,0 +1,31 @@
+{
+  "name": "using-univer-with-vue3",
+  "description": "The example project of using Univer with Vue 3",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "engines": {
+    "npm": ">=7.0.0"
+  },
+  "dependencies": {
+    "@univerjs/core": "*",
+    "@univerjs/design": "*",
+    "@univerjs/docs": "*",
+    "@univerjs/engine-formula": "*",
+    "@univerjs/engine-render": "*",
+    "@univerjs/sheets": "*",
+    "@univerjs/sheets-formula": "*",
+    "@univerjs/sheets-ui": "*",
+    "@univerjs/ui": "*",
+    "vue": "^3.3.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "vite": "^5.0.10"
+  }
+}
