@@ -1,0 +1,46 @@
+name: Update @univerjs Dependencies
+
+on:
+  workflow_dispatch:
+  schedule:
+      - cron: '0 16 * * *'
+
+jobs:
+  update-dependencies:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GH_TOKEN }}
+
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2
+      with:
+          version: 8
+          run_install: false
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+        cache: pnpm
+
+    - name: Install dependencies with pnpm
+      run: |
+        pnpm i
+        pnpm up '@univerjs/*'
+
+    - name: Commit and push if there are updates
+      run: |
+        if git diff --exit-code; then
+          echo "No updates available."
+        else
+          echo "Updates available."
+          git config user.name GitHub Actions
+          git config user.email actions@github.com
+          git add .
+          git commit -m "Update @univerjs dependencies"
+          git push
+        fi
