@@ -34,13 +34,9 @@ jobs:
 
     - name: Commit and push if there are updates
       run: |
-        if git diff --exit-code; then
-          echo "No updates available."
-        else
-          echo "Updates available."
-          git config user.name GitHub Actions
-          git config user.email actions@github.com
-          git add .
-          git commit -m "Update univerjs/* dependencies"
-          git push
-        fi
+        echo "Updates available."
+        git config user.name GitHub Actions
+        git config user.email actions@github.com
+        git add .
+        git commit -m "Update univerjs/* dependencies" || exit 0
+        git push
