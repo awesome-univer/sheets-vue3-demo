@@ -29,7 +29,7 @@ const {data} = defineProps({
   },
 });
 
-const univer = ref(null);
+const univerRef = ref(null);
 const workbook = ref(null);
 const container = ref(null);
 
@@ -49,7 +49,7 @@ const init = (data = {}) => {
   const univer = new Univer({
     theme: defaultTheme,
   });
-  univer.value = univer;
+  univerRef.value = univer;
 
 
   // core plugins
@@ -81,8 +81,8 @@ const init = (data = {}) => {
  * Destroy univer instance and workbook instance
  */
 const destroyUniver = () => {
-  univer.value?.dispose();
-  univer.value = null;
+  univerRef.value?.dispose();
+  univerRef.value = null;
   workbook.value = null;
 };
 
