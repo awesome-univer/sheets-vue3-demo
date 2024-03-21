@@ -2,13 +2,13 @@
   <div ref="container" class="univer-container"></div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import "@univerjs/design/lib/index.css";
 import "@univerjs/ui/lib/index.css";
 import "@univerjs/sheets-ui/lib/index.css";
 import "@univerjs/sheets-formula/lib/index.css";
 
-import { Univer } from "@univerjs/core";
+import { Univer, Workbook } from "@univerjs/core";
 import { defaultTheme } from "@univerjs/design";
 import { UniverDocsPlugin } from "@univerjs/docs";
 import { UniverDocsUIPlugin } from "@univerjs/docs-ui";
@@ -21,7 +21,7 @@ import { UniverUIPlugin } from "@univerjs/ui";
 import { onBeforeUnmount, onMounted, ref } from "vue";
 
 
-const {data} = defineProps({
+const { data } = defineProps({
   // workbook data
   data: {
     type: Object,
@@ -29,9 +29,9 @@ const {data} = defineProps({
   },
 });
 
-const univerRef = ref(null);
-const workbook = ref(null);
-const container = ref(null);
+const univerRef = ref<Univer | null>(null);
+const workbook = ref<Workbook | null>(null);
+const container = ref<HTMLElement | null>(null);
 
 onMounted(() => {
   init(data);
