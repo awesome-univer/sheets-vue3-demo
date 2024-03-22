@@ -7,13 +7,13 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import UniverSheet from './components/UniverSheet.vue'
 import { DEFAULT_WORKBOOK_DATA } from './assets/default-workbook-data'
 import { ref } from 'vue';
 
 const data = ref(DEFAULT_WORKBOOK_DATA);
-const univerRef = ref(null);
+const univerRef = ref<InstanceType<typeof UniverSheet> | null>(null);
 
 const getData = () => {
   const result = univerRef.value?.getData();
