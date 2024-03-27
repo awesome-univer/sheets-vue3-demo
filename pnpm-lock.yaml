@@ -305,16 +305,16 @@ packages:
     dev: true
     optional: true
 
-  /@grpc/grpc-js@1.10.3:
-    resolution: {integrity: sha512-qiO9MNgYnwbvZ8MK0YLWbnGrNX3zTcj6/Ef7UHu5ZofER3e2nF3Y35GaPo9qNJJ/UJQKa4KL+z/F4Q8Q+uCdUQ==}
+  /@grpc/grpc-js@1.10.4:
+    resolution: {integrity: sha512-MqBisuxTkYvPFnEiu+dag3xG/NBUDzSbAFAWlzfkGnQkjVZ6by3h4atbBc+Ikqup1z5BfB4BN18gKWR1YyppNw==}
     engines: {node: '>=12.10.0'}
     dependencies:
-      '@grpc/proto-loader': 0.7.10
+      '@grpc/proto-loader': 0.7.11
       '@js-sdsl/ordered-map': 4.4.2
     dev: false
 
-  /@grpc/proto-loader@0.7.10:
-    resolution: {integrity: sha512-CAqDfoaQ8ykFd9zqBDn4k6iWT9loLAlc2ETmDFS9JCD70gDcnA4L3AFEo2iV7KyAtAAHFW9ftq1Fz+Vsgq80RQ==}
+  /@grpc/proto-loader@0.7.11:
+    resolution: {integrity: sha512-amjhSfJ+xYnTP+hncJMmkchoRtjIdi+uO3FaymGSCr07yu5xfpXFEnhZkTU1mj2lPJB3oVToau7j9YkqB+YNdg==}
     engines: {node: '>=6'}
     hasBin: true
     dependencies:
@@ -565,7 +565,7 @@ packages:
       '@wendellhu/redi': 0.13.0
       rxjs: '>=7.0.0'
     dependencies:
-      '@univerjs/protocol': 0.1.0(@grpc/grpc-js@1.10.3)(rxjs@7.8.1)
+      '@univerjs/protocol': 0.1.0(@grpc/grpc-js@1.10.4)(rxjs@7.8.1)
       '@wendellhu/redi': 0.13.0
       dayjs: 1.11.10
       nanoid: 5.0.6
@@ -691,14 +691,14 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@univerjs/protocol@0.1.0(@grpc/grpc-js@1.10.3)(rxjs@7.8.1):
+  /@univerjs/protocol@0.1.0(@grpc/grpc-js@1.10.4)(rxjs@7.8.1):
     resolution: {integrity: sha512-tta0qKO39tR+TkfYXGecmKvihCYS55Jc2YAX176IDsFGQxWUzsqx9Y+ait+qDflSJALj6ocoNf7g81xUfz6DNA==}
     engines: {node: '>=16.0.0', npm: '>=8.0.0'}
     peerDependencies:
       '@grpc/grpc-js': ^1.9.14
       rxjs: '>=7.0.0'
     dependencies:
-      '@grpc/grpc-js': 1.10.3
+      '@grpc/grpc-js': 1.10.4
       rxjs: 7.8.1
     dev: false
 
