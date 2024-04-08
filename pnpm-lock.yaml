@@ -564,7 +564,7 @@ packages:
       '@wendellhu/redi': 0.13.0
       rxjs: '>=7.0.0'
     dependencies:
-      '@univerjs/protocol': 0.1.15(@grpc/grpc-js@1.10.6)(rxjs@7.8.1)
+      '@univerjs/protocol': 0.1.16(@grpc/grpc-js@1.10.6)(rxjs@7.8.1)
       '@wendellhu/redi': 0.13.0
       dayjs: 1.11.10
       nanoid: 5.0.6
@@ -693,8 +693,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@univerjs/protocol@0.1.15(@grpc/grpc-js@1.10.6)(rxjs@7.8.1):
-    resolution: {integrity: sha512-GVhsXDRUG9xy3ktfeo3fjRB5t0PAN6K2PJ1kc0HgR9lpAlnxwMn238sX3bspeOA5QTwrES5azDjMUGBDf1O+RQ==}
+  /@univerjs/protocol@0.1.16(@grpc/grpc-js@1.10.6)(rxjs@7.8.1):
+    resolution: {integrity: sha512-oorladq5M7RVuAtY2sRjKZptkp5rU9uO6B8D2EYkIdODAk2zUHzSbaln6lA6Nus/daROIAcQIiPeLW7jfAT0Bg==}
     engines: {node: '>=16.0.0', npm: '>=8.0.0'}
     peerDependencies:
       '@grpc/grpc-js': ^1.9.14
