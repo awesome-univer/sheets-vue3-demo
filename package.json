@@ -14,16 +14,16 @@
     "npm": ">=7.0.0"
   },
   "dependencies": {
-    "@univerjs/core": "^0.1.8",
-    "@univerjs/design": "^0.1.8",
-    "@univerjs/docs": "^0.1.8",
-    "@univerjs/docs-ui": "^0.1.8",
-    "@univerjs/engine-formula": "^0.1.8",
-    "@univerjs/engine-render": "^0.1.8",
-    "@univerjs/sheets": "^0.1.8",
-    "@univerjs/sheets-formula": "^0.1.8",
-    "@univerjs/sheets-ui": "^0.1.8",
-    "@univerjs/ui": "^0.1.8",
+    "@univerjs/core": "^0.1.9",
+    "@univerjs/design": "^0.1.9",
+    "@univerjs/docs": "^0.1.9",
+    "@univerjs/docs-ui": "^0.1.9",
+    "@univerjs/engine-formula": "^0.1.9",
+    "@univerjs/engine-render": "^0.1.9",
+    "@univerjs/sheets": "^0.1.9",
+    "@univerjs/sheets-formula": "^0.1.9",
+    "@univerjs/sheets-ui": "^0.1.9",
+    "@univerjs/ui": "^0.1.9",
     "vue": "^3.4.21"
   },
   "devDependencies": {
