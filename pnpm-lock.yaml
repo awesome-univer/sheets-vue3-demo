@@ -581,8 +581,8 @@ packages:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
     dev: true
 
-  /@types/node@20.12.12:
-    resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
+  /@types/node@20.12.13:
+    resolution: {integrity: sha512-gBGeanV41c1L171rR7wjbMiEpEI/l5XFQdLLfhr/REwpgDy/4U8y89+i8kRiLzDyZdOkXh+cRaTetUnCYutoXA==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -632,7 +632,7 @@ packages:
       '@rc-component/color-picker': 1.5.3(react-dom@18.3.1)(react@18.3.1)
       '@rc-component/trigger': 1.18.3(react-dom@18.3.1)(react@18.3.1)
       '@types/react-mentions': 4.1.13
-      '@univerjs/icons': 0.1.54(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.1.55(react-dom@18.3.1)(react@18.3.1)
       clsx: 2.1.1
       dayjs: 1.11.11
       rc-dialog: 9.4.0(react-dom@18.3.1)(react@18.3.1)
@@ -734,8 +734,8 @@ packages:
       rxjs: 7.8.1
     dev: false
 
-  /@univerjs/icons@0.1.54(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-s82L8pDlOJsx3UJZM/uBhzZp7w/Kg7MiVoLIDS2upowQwkNprlZJNTrVz2nKxwtl2WdMtfLeQIW0f07n9oyChw==}
+  /@univerjs/icons@0.1.55(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-qSfHP196ZCNP4dbdM6nhHFhZ/317BYMt2uqsZaKb6faDzOvDnyL+kB6DjMmzbRK6WKleVksYPOrMlc1v3DBmjQ==}
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -776,7 +776,7 @@ packages:
       '@univerjs/docs': 0.1.12(@univerjs/core@0.1.12)(@univerjs/engine-render@0.1.12)(@wendellhu/redi@0.15.2)(rxjs@7.8.1)
       '@univerjs/engine-formula': 0.1.12(@univerjs/core@0.1.12)(@wendellhu/redi@0.15.2)(rxjs@7.8.1)
       '@univerjs/engine-render': 0.1.12(@univerjs/core@0.1.12)(@wendellhu/redi@0.15.2)(rxjs@7.8.1)
-      '@univerjs/icons': 0.1.54(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.1.55(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/sheets': 0.1.12(@univerjs/core@0.1.12)(@univerjs/engine-formula@0.1.12)(@univerjs/engine-render@0.1.12)(@wendellhu/redi@0.15.2)(rxjs@7.8.1)
       '@univerjs/sheets-ui': 0.1.12(@univerjs/core@0.1.12)(@univerjs/design@0.1.12)(@univerjs/docs-ui@0.1.12)(@univerjs/docs@0.1.12)(@univerjs/engine-formula@0.1.12)(@univerjs/engine-numfmt@0.1.12)(@univerjs/engine-render@0.1.12)(@univerjs/sheets@0.1.12)(@univerjs/ui@0.1.12)(@wendellhu/redi@0.15.2)(clsx@2.1.1)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/ui': 0.1.12(@univerjs/core@0.1.12)(@univerjs/design@0.1.12)(@univerjs/engine-formula@0.1.12)(@univerjs/engine-render@0.1.12)(@wendellhu/redi@0.15.2)(clsx@2.1.1)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.1)
@@ -812,7 +812,7 @@ packages:
       '@univerjs/engine-formula': 0.1.12(@univerjs/core@0.1.12)(@wendellhu/redi@0.15.2)(rxjs@7.8.1)
       '@univerjs/engine-numfmt': 0.1.12
       '@univerjs/engine-render': 0.1.12(@univerjs/core@0.1.12)(@wendellhu/redi@0.15.2)(rxjs@7.8.1)
-      '@univerjs/icons': 0.1.54(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.1.55(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/sheets': 0.1.12(@univerjs/core@0.1.12)(@univerjs/engine-formula@0.1.12)(@univerjs/engine-render@0.1.12)(@wendellhu/redi@0.15.2)(rxjs@7.8.1)
       '@univerjs/ui': 0.1.12(@univerjs/core@0.1.12)(@univerjs/design@0.1.12)(@univerjs/engine-formula@0.1.12)(@univerjs/engine-render@0.1.12)(@wendellhu/redi@0.15.2)(clsx@2.1.1)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.1)
       '@wendellhu/redi': 0.15.2
@@ -858,7 +858,7 @@ packages:
       '@univerjs/design': 0.1.12(clsx@2.1.1)(dayjs@1.11.11)(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/engine-formula': 0.1.12(@univerjs/core@0.1.12)(@wendellhu/redi@0.15.2)(rxjs@7.8.1)
       '@univerjs/engine-render': 0.1.12(@univerjs/core@0.1.12)(@wendellhu/redi@0.15.2)(rxjs@7.8.1)
-      '@univerjs/icons': 0.1.54(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.1.55(react-dom@18.3.1)(react@18.3.1)
       '@wendellhu/redi': 0.15.2
       clsx: 2.1.1
       localforage: 1.10.0
@@ -1226,7 +1226,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.12.12
+      '@types/node': 20.12.13
       long: 5.2.3
     dev: false
 
