@@ -8,7 +8,7 @@ import "@univerjs/ui/lib/index.css";
 import "@univerjs/sheets-ui/lib/index.css";
 import "@univerjs/sheets-formula/lib/index.css";
 
-import { Univer, Workbook } from "@univerjs/core";
+import { Univer, UniverInstanceType, Workbook } from "@univerjs/core";
 import { defaultTheme } from "@univerjs/design";
 import { UniverDocsPlugin } from "@univerjs/docs";
 import { UniverDocsUIPlugin } from "@univerjs/docs-ui";
@@ -74,7 +74,7 @@ const init = (data = {}) => {
   univer.registerPlugin(UniverSheetsFormulaPlugin);
 
   // create workbook instance
-  workbook.value = univer.createUniverSheet(data);
+  workbook.value = univer.createUnit(UniverInstanceType.UNIVER_SHEET, data)
 };
 
 /**
