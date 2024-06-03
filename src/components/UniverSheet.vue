@@ -1,14 +1,9 @@
 <template>
-  <div ref="container" class="univer-container"></div>
+  <div ref="container" class="univer-container" />
 </template>
 
 <script setup lang="ts">
-import "@univerjs/design/lib/index.css";
-import "@univerjs/ui/lib/index.css";
-import "@univerjs/sheets-ui/lib/index.css";
-import "@univerjs/sheets-formula/lib/index.css";
-
-import { Univer, UniverInstanceType, Workbook } from "@univerjs/core";
+import { Univer, UniverInstanceType, Workbook, LocaleType } from "@univerjs/core";
 import { defaultTheme } from "@univerjs/design";
 import { UniverDocsPlugin } from "@univerjs/docs";
 import { UniverDocsUIPlugin } from "@univerjs/docs-ui";
@@ -19,7 +14,7 @@ import { UniverSheetsFormulaPlugin } from "@univerjs/sheets-formula";
 import { UniverSheetsUIPlugin } from "@univerjs/sheets-ui";
 import { UniverUIPlugin } from "@univerjs/ui";
 import { onBeforeUnmount, onMounted, ref } from "vue";
-
+import { zhCN, enUS } from 'univer:locales'
 
 const { data } = defineProps({
   // workbook data
@@ -48,6 +43,11 @@ onBeforeUnmount(() => {
 const init = (data = {}) => {
   const univer = new Univer({
     theme: defaultTheme,
+    locale: LocaleType.ZH_CN,
+    locales: {
+      [LocaleType.ZH_CN]: zhCN,
+      [LocaleType.EN_US]: enUS,
+    },
   });
   univerRef.value = univer;
 
@@ -56,10 +56,7 @@ const init = (data = {}) => {
   univer.registerPlugin(UniverRenderEnginePlugin);
   univer.registerPlugin(UniverFormulaEnginePlugin);
   univer.registerPlugin(UniverUIPlugin, {
-    container: container.value,
-    header: true,
-    toolbar: true,
-    footer: true,
+    container: container.value!,
   });
 
   // doc plugins
@@ -74,7 +71,7 @@ const init = (data = {}) => {
   univer.registerPlugin(UniverSheetsFormulaPlugin);
 
   // create workbook instance
-  workbook.value = univer.createUnit(UniverInstanceType.UNIVER_SHEET, data)
+  univer.createUnit(UniverInstanceType.UNIVER_SHEET, data)
 };
 
 /**
