@@ -41,8 +41,8 @@ dependencies:
 
 devDependencies:
   '@univerjs/vite-plugin':
-    specifier: ^0.4.1
-    version: 0.4.1
+    specifier: ^0.4.3
+    version: 0.4.3
   '@vitejs/plugin-vue':
     specifier: ^5.0.5
     version: 5.0.5(vite@5.2.12)(vue@3.4.27)
@@ -570,8 +570,8 @@ packages:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
     dev: true
 
-  /@types/node@20.14.0:
-    resolution: {integrity: sha512-5cHBxFGJx6L4s56Bubp4fglrEpmyJypsqI6RgzMfBHWUJQGWAAi8cWcgetEbZXHYXo9C2Fa4EEds/uSyS4cxmA==}
+  /@types/node@20.14.1:
+    resolution: {integrity: sha512-T2MzSGEu+ysB/FkWfqmhV3PLyQlowdptmmgD20C6QxsS8Fmv5SjpZ1ayXaEC0S21/h5UJ9iA6W/5vSNU5l00OA==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -600,7 +600,7 @@ packages:
       '@wendellhu/redi': 0.15.2
       rxjs: '>=7.0.0'
     dependencies:
-      '@univerjs/protocol': 0.1.35(@grpc/grpc-js@1.10.8)(rxjs@7.8.1)
+      '@univerjs/protocol': 0.1.36(@grpc/grpc-js@1.10.8)(rxjs@7.8.1)
       '@wendellhu/redi': 0.15.2
       nanoid: 5.0.7
       numeral: 2.0.6
@@ -734,8 +734,8 @@ packages:
       react-dom: 18.3.1(react@18.3.1)
     dev: false
 
-  /@univerjs/protocol@0.1.35(@grpc/grpc-js@1.10.8)(rxjs@7.8.1):
-    resolution: {integrity: sha512-dVzx6XiVO7UVoBwx4K/mP3QFRgqfu+xaS/Hw2U/SmyUWmdGpwckbH0Xl4fUWhRuJIxSqZZKTLfgGSI58Qj5i2g==}
+  /@univerjs/protocol@0.1.36(@grpc/grpc-js@1.10.8)(rxjs@7.8.1):
+    resolution: {integrity: sha512-MYQ3g3mYSoFuDprgPFAa+dyb0L6NqrIg1dyr8s+NsHj3rncwbXFD3PYba30dALP9cqiSs6GXVbeXURYG5ZGWFg==}
     engines: {node: '>=16.0.0', npm: '>=8.0.0'}
     peerDependencies:
       '@grpc/grpc-js': ^1.9.14
@@ -803,7 +803,7 @@ packages:
       '@univerjs/engine-numfmt': 0.1.13
       '@univerjs/engine-render': 0.1.13(@univerjs/core@0.1.13)(@wendellhu/redi@0.15.2)(rxjs@7.8.1)
       '@univerjs/icons': 0.1.56(react-dom@18.3.1)(react@18.3.1)
-      '@univerjs/protocol': 0.1.35(@grpc/grpc-js@1.10.8)(rxjs@7.8.1)
+      '@univerjs/protocol': 0.1.36(@grpc/grpc-js@1.10.8)(rxjs@7.8.1)
       '@univerjs/sheets': 0.1.13(@grpc/grpc-js@1.10.8)(@univerjs/core@0.1.13)(@univerjs/engine-formula@0.1.13)(@univerjs/engine-render@0.1.13)(@wendellhu/redi@0.15.2)(rxjs@7.8.1)
       '@univerjs/ui': 0.1.13(@univerjs/core@0.1.13)(@univerjs/design@0.1.13)(@univerjs/engine-formula@0.1.13)(@univerjs/engine-render@0.1.13)(@wendellhu/redi@0.15.2)(clsx@2.1.1)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.1)
       '@wendellhu/redi': 0.15.2
@@ -828,7 +828,7 @@ packages:
       '@univerjs/core': 0.1.13(@grpc/grpc-js@1.10.8)(@wendellhu/redi@0.15.2)(rxjs@7.8.1)
       '@univerjs/engine-formula': 0.1.13(@univerjs/core@0.1.13)(@wendellhu/redi@0.15.2)(rxjs@7.8.1)
       '@univerjs/engine-render': 0.1.13(@univerjs/core@0.1.13)(@wendellhu/redi@0.15.2)(rxjs@7.8.1)
-      '@univerjs/protocol': 0.1.35(@grpc/grpc-js@1.10.8)(rxjs@7.8.1)
+      '@univerjs/protocol': 0.1.36(@grpc/grpc-js@1.10.8)(rxjs@7.8.1)
       '@wendellhu/redi': 0.15.2
       rxjs: 7.8.1
     transitivePeerDependencies:
@@ -868,8 +868,8 @@ packages:
       - typescript
     dev: false
 
-  /@univerjs/vite-plugin@0.4.1:
-    resolution: {integrity: sha512-+3Ggm4MszxgJI+6SXAXOs9a6wcMra4kdnfoUM2MBdx1Hjs4ieyp9qIIpBxC11dt6hxZClTVlCWQxUaimopqf0g==}
+  /@univerjs/vite-plugin@0.4.3:
+    resolution: {integrity: sha512-+0NWucw6R3Ecqk20McYaWoL65Aj4w/e8OA21svG1mFoJGU12IK8RG/oKvs2wRqwbPjWUaecRV3Z/FvkhWqN3MA==}
     engines: {node: '>=16.0.0', npm: '>=8.0.0'}
     dev: true
 
@@ -1232,7 +1232,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.14.0
+      '@types/node': 20.14.1
       long: 5.2.3
     dev: false
 
