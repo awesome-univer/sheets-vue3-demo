@@ -21,11 +21,11 @@ import {
 
 /**
  * Default workbook data
- * @type {IWorkbookData} document see https://univer.work/api/core/interfaces/IWorkbookData.html
+ * @type {IWorkbookData} document see https://univer.ai/typedoc/@univerjs/core/interfaces/IWorkbookData
  */
 export const DEFAULT_WORKBOOK_DATA = {
     id: 'workbook-01',
-    locale: LocaleType.ZH_CN,
+    locale: LocaleType.EN_US,
     name: 'universheet',
     sheetOrder: ['sheet-01', 'sheet-02', 'sheet-03'],
     appVersion: '3.0.0-alpha',

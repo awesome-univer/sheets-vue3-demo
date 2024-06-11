@@ -11,7 +11,8 @@
     "preview": "vite preview"
   },
   "engines": {
-    "npm": ">=7.0.0"
+    "npm": ">=7.0.0",
+    "pnpm": ">=7.0.0"
   },
   "dependencies": {
     "@univerjs/core": "^0.1.14",

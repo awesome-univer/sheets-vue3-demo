@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { Univer, UniverInstanceType, Workbook, LocaleType } from "@univerjs/core";
+import { Univer, UniverInstanceType, Workbook, LocaleType, IWorkbookData } from "@univerjs/core";
 import { defaultTheme } from "@univerjs/design";
 import { UniverDocsPlugin } from "@univerjs/docs";
 import { UniverDocsUIPlugin } from "@univerjs/docs-ui";
@@ -47,12 +47,12 @@ onBeforeUnmount(() => {
 
 /**
  * Initialize univer instance and workbook instance
- * @param data {IWorkbookData} document see https://univer.work/api/core/interfaces/IWorkbookData.html
+ * @param data {IWorkbookData} document see https://univer.ai/typedoc/@univerjs/core/interfaces/IWorkbookData
  */
 const init = (data = {}) => {
   const univer = new Univer({
     theme: defaultTheme,
-    locale: LocaleType.ZH_CN,
+    locale: LocaleType.EN_US,
     locales: {
       [LocaleType.ZH_CN]: zhCN,
       [LocaleType.EN_US]: enUS,
@@ -80,7 +80,7 @@ const init = (data = {}) => {
   univer.registerPlugin(UniverSheetsFormulaPlugin);
 
   // create workbook instance
-  univer.createUnit(UniverInstanceType.UNIVER_SHEET, data)
+  workbook.value = univer.createUnit<IWorkbookData, Workbook>(UniverInstanceType.UNIVER_SHEET, data)
 };
 
 /**
