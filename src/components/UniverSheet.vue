@@ -13,7 +13,7 @@ import { UniverSheetsPlugin } from "@univerjs/sheets";
 import { UniverSheetsFormulaPlugin } from "@univerjs/sheets-formula";
 import { UniverSheetsUIPlugin } from "@univerjs/sheets-ui";
 import { UniverUIPlugin } from "@univerjs/ui";
-import { onBeforeUnmount, onMounted, ref } from "vue";
+import { onBeforeUnmount, onMounted, ref, toRaw } from "vue";
 
 /**
  * 
@@ -87,7 +87,7 @@ const init = (data = {}) => {
  * Destroy univer instance and workbook instance
  */
 const destroyUniver = () => {
-  univerRef.value?.dispose();
+  toRaw(univerRef.value)?.dispose();
   univerRef.value = null;
   workbook.value = null;
 };
@@ -104,6 +104,7 @@ const getData = () => {
 
 defineExpose({
   getData,
+  destroyUniver
 });
 </script>
 
