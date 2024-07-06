@@ -47,10 +47,10 @@ importers:
         version: 0.4.4
       '@vitejs/plugin-vue':
         specifier: ^5.0.5
-        version: 5.0.5(vite@5.2.13(@types/node@20.14.9))(vue@3.4.27)
+        version: 5.0.5(vite@5.2.13(@types/node@20.14.10))(vue@3.4.27)
       vite:
         specifier: ^5.2.12
-        version: 5.2.13(@types/node@20.14.9)
+        version: 5.2.13(@types/node@20.14.10)
 
 packages:
 
@@ -372,8 +372,8 @@ packages:
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
-  '@types/node@20.14.9':
-    resolution: {integrity: sha512-06OCtnTXtWOZBJlRApleWndH4JsRVs1pDCc8dLSQp+7PpUpX3ePdHyeNSFTeSe7FtKyQkrlPvHwJOW3SLd8Oyg==}
+  '@types/node@20.14.10':
+    resolution: {integrity: sha512-MdiXf+nDuMvY0gJKxyfZ7/6UFsETO7mGKF54MVD/ekJS6HdFtpZFBgrh6Pseu64XTb2MLyFPlbW6hj8HYRQNOQ==}
 
   '@types/prop-types@15.7.12':
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
@@ -1213,7 +1213,7 @@ snapshots:
 
   '@types/estree@1.0.5': {}
 
-  '@types/node@20.14.9':
+  '@types/node@20.14.10':
     dependencies:
       undici-types: 5.26.5
 
@@ -1397,9 +1397,9 @@ snapshots:
 
   '@univerjs/vite-plugin@0.4.4': {}
 
-  '@vitejs/plugin-vue@5.0.5(vite@5.2.13(@types/node@20.14.9))(vue@3.4.27)':
+  '@vitejs/plugin-vue@5.0.5(vite@5.2.13(@types/node@20.14.10))(vue@3.4.27)':
     dependencies:
-      vite: 5.2.13(@types/node@20.14.9)
+      vite: 5.2.13(@types/node@20.14.10)
       vue: 3.4.27
 
   '@vue/compiler-core@3.4.27':
@@ -1625,7 +1625,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.14.9
+      '@types/node': 20.14.10
       long: 5.2.3
 
   rc-dialog@9.5.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
@@ -1918,13 +1918,13 @@ snapshots:
 
   unicount@1.1.0: {}
 
-  vite@5.2.13(@types/node@20.14.9):
+  vite@5.2.13(@types/node@20.14.10):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.18.0
     optionalDependencies:
-      '@types/node': 20.14.9
+      '@types/node': 20.14.10
       fsevents: 2.3.3
 
   vue@3.4.27:
