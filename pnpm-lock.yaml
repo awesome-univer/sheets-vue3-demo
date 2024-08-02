@@ -56,10 +56,10 @@ importers:
         version: 0.4.4
       '@vitejs/plugin-vue':
         specifier: ^5.0.5
-        version: 5.0.5(vite@5.2.12(@types/node@22.0.2))(vue@3.4.27)
+        version: 5.0.5(vite@5.2.12(@types/node@22.1.0))(vue@3.4.27)
       vite:
         specifier: ^5.2.12
-        version: 5.2.12(@types/node@22.0.2)
+        version: 5.2.12(@types/node@22.1.0)
 
 packages:
 
@@ -390,8 +390,8 @@ packages:
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
-  '@types/node@22.0.2':
-    resolution: {integrity: sha512-yPL6DyFwY5PiMVEwymNeqUTKsDczQBJ/5T7W/46RwLU/VH+AA8aT5TZkvBviLKLbbm0hlfftEkGrNzfRk/fofQ==}
+  '@types/node@22.1.0':
+    resolution: {integrity: sha512-AOmuRF0R2/5j1knA3c6G3HOk523Ga+l+ZXltX8SF1+5oqcXijjfTd8fY3XRZqSihEu9XhtQnKYLmkFaoxgsJHw==}
 
   '@types/prop-types@15.7.12':
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
@@ -980,8 +980,8 @@ packages:
   tslib@2.6.3:
     resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
 
-  undici-types@6.11.1:
-    resolution: {integrity: sha512-mIDEX2ek50x0OlRgxryxsenE5XaQD4on5U2inY7RApK3SOJpofyw7uW2AyfMKkhAxXIceo2DeWGVGwyvng1GNQ==}
+  undici-types@6.13.0:
+    resolution: {integrity: sha512-xtFJHudx8S2DSoujjMd1WeWvn7KKWFRESZTMeL1RptAYERu29D6jphMjjY+vn96jvN3kVPDNxU/E13VTaXj6jg==}
 
   unicode-regex@4.0.0:
     resolution: {integrity: sha512-Zdlz4CqHeCy1pw2J15RmCMw/9QLRBz+BykmI8YNbtbf4pIV8t+1fHKD7y13NhauPEvisi2e5SoaonBNX77opGA==}
@@ -1269,9 +1269,9 @@ snapshots:
 
   '@types/estree@1.0.5': {}
 
-  '@types/node@22.0.2':
+  '@types/node@22.1.0':
     dependencies:
-      undici-types: 6.11.1
+      undici-types: 6.13.0
 
   '@types/prop-types@15.7.12': {}
 
@@ -1480,9 +1480,9 @@ snapshots:
 
   '@univerjs/vite-plugin@0.4.4': {}
 
-  '@vitejs/plugin-vue@5.0.5(vite@5.2.12(@types/node@22.0.2))(vue@3.4.27)':
+  '@vitejs/plugin-vue@5.0.5(vite@5.2.12(@types/node@22.1.0))(vue@3.4.27)':
     dependencies:
-      vite: 5.2.12(@types/node@22.0.2)
+      vite: 5.2.12(@types/node@22.1.0)
       vue: 3.4.27
 
   '@vue/compiler-core@3.4.27':
@@ -1708,7 +1708,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 22.0.2
+      '@types/node': 22.1.0
       long: 5.2.3
 
   rc-dialog@9.5.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
@@ -1995,7 +1995,7 @@ snapshots:
 
   tslib@2.6.3: {}
 
-  undici-types@6.11.1: {}
+  undici-types@6.13.0: {}
 
   unicode-regex@4.0.0:
     dependencies:
@@ -2003,13 +2003,13 @@ snapshots:
 
   unicount@1.1.0: {}
 
-  vite@5.2.12(@types/node@22.0.2):
+  vite@5.2.12(@types/node@22.1.0):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.18.0
     optionalDependencies:
-      '@types/node': 22.0.2
+      '@types/node': 22.1.0
       fsevents: 2.3.3
 
   vue@3.4.27:
