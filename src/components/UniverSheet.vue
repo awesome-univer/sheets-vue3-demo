@@ -58,8 +58,12 @@ const init = (data = {}) => {
       [LocaleType.EN_US]: enUS,
     },
   });
+  /**
+   * If you set the univer instance to a ref, you need to use toRaw to get the original object
+   * 
+   * 如果你将 univer 实例设置到 ref 中，使用时则需要使用 toRaw 获取原始对象
+   */
   univerRef.value = univer;
-
 
   // core plugins
   univer.registerPlugin(UniverRenderEnginePlugin);

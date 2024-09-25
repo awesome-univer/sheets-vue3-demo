@@ -15,24 +15,24 @@
     "pnpm": ">=7.0.0"
   },
   "dependencies": {
-    "@univerjs/core": "0.2.3",
-    "@univerjs/design": "0.2.3",
-    "@univerjs/docs": "0.2.3",
-    "@univerjs/docs-ui": "0.2.3",
-    "@univerjs/engine-formula": "0.2.3",
-    "@univerjs/engine-render": "0.2.3",
-    "@univerjs/network": "0.2.3",
-    "@univerjs/rpc": "0.2.3",
-    "@univerjs/sheets": "0.2.3",
-    "@univerjs/sheets-formula": "0.2.3",
-    "@univerjs/sheets-numfmt": "0.2.3",
-    "@univerjs/sheets-ui": "0.2.3",
-    "@univerjs/ui": "0.2.3",
-    "vue": "^3.4.27"
+    "@univerjs/core": "0.2.15",
+    "@univerjs/design": "0.2.15",
+    "@univerjs/docs": "0.2.15",
+    "@univerjs/docs-ui": "0.2.15",
+    "@univerjs/engine-formula": "0.2.15",
+    "@univerjs/engine-render": "0.2.15",
+    "@univerjs/network": "0.2.15",
+    "@univerjs/rpc": "0.2.15",
+    "@univerjs/sheets": "0.2.15",
+    "@univerjs/sheets-formula": "0.2.15",
+    "@univerjs/sheets-numfmt": "0.2.15",
+    "@univerjs/sheets-ui": "0.2.15",
+    "@univerjs/ui": "0.2.15",
+    "vue": "^3.5.8"
   },
   "devDependencies": {
-    "@univerjs/vite-plugin": "^0.4.4",
-    "@vitejs/plugin-vue": "^5.0.5",
-    "vite": "^5.2.12"
+    "@univerjs/vite-plugin": "^0.5.0",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "vite": "^5.4.8"
   }
 }
