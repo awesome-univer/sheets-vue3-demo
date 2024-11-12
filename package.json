@@ -32,7 +32,7 @@
     "vue": "^3.5.8"
   },
   "devDependencies": {
-    "@univerjs/vite-plugin": "^0.5.0",
+    "@univerjs/vite-plugin": "^0.5.1",
     "@vitejs/plugin-vue": "^5.1.4",
     "vite": "^5.4.8"
   }
